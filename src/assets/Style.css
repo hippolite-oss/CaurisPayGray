@@ -1,0 +1,137 @@
+/* Styles de base */
+.connexion-container {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: solid 1px #ddd;
+  
+}
+
+.connexion-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.connexion-title {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.connexion-subtitle {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+/* Formulaire */
+.connexion-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-input {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+.form-input:hover {
+    border-color: #3498db;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.form-options {
+  display: flex;
+  justify-content: center;
+}
+
+
+.forgot-password {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.forgot-password:hover {
+  text-decoration: none;
+    color: #2980b9;
+}
+
+/* Boutons */
+.submit-btn {
+  background-color: #028706;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #017d0a;
+}
+
+/* Séparateur */
+.separator {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  color: #95a5a6;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.separator-text {
+  padding: 0 1rem;
+  font-size: 0.9rem;
+}
+
+
+.create-account {
+  text-align: center;
+}
+
+.create-account-btn {
+  display: inline-block;
+  background-color: transparent;
+  padding: 10px 16px;
+  border: 2px solid black;
+  border-radius: 25px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  width: 90%;
+}
+
+.create-account-btn:hover {
+  background-color: transparent;
+  color: #3498db;
+border: solid 2px #3498db;
+  
+
+}
