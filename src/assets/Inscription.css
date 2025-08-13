@@ -82,7 +82,7 @@ border-color: #06f78a;
   font-size: 18px;
   font-weight: 700;
   border: none;
-  border-radius: 12px;
+  border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.4s ease, box-shadow 0.4s ease;
   letter-spacing: 1.2px;
