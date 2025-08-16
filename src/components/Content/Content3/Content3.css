@@ -1,0 +1,126 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(1fr, 1fr);
+  grid-template-rows: repeat(1fr, 1fr);
+  gap: 20px;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 32px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Zone 1 - block grand avec titres */
+.div1 {
+  grid-area: 1 / 1 / 3 / 3;
+  border-radius: 12px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.div1 h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #027d71;
+  margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.div1 h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0;
+  color: #111;
+}
+
+/* Zone 2 - statistique */
+.div2 {
+  grid-area: 3 / 1 / 4 / 2;
+  background: #f4f7f6;
+  border-radius: 10px;
+  padding: 24px 16px;
+  color: #027d71;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1;
+  user-select: none;
+}
+
+.div2 h3 {
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-top: 12px;
+  color: #333;
+}
+
+/* Zone 3 */
+.div3 {
+  grid-area: 3 / 2 / 4 / 3;
+  background: #f4f7f6;
+  border-radius: 10px;
+  padding: 24px 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #2a2a2a;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Zone 4 */
+.div4 {
+  grid-area: 4 / 1 / 5 / 3;
+  background: #f4f7f6;
+  border-radius: 12px;
+  padding: 28px 24px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #027d71;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .parent {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .div1,
+  .div2,
+  .div3,
+  .div4 {
+    grid-area: auto !important;
+  }
+
+  .div1 {
+    font-size: 1.5rem;
+    padding: 24px 16px;
+  }
+
+  .div2 {
+    font-size: 2rem;
+  }
+
+  .div3, .div4 {
+    font-size: 1rem;
+    padding: 16px 12px;
+  }
+}

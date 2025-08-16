@@ -1,11 +1,15 @@
 .content2-container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding: 24px;
-  max-width: 900px;
+  gap: 32px;
+  padding: 32px;
+  max-width: 1510px;
   margin: 0 auto;
   box-sizing: border-box;
+  border: solid 0.5px #ddd;
+  border-radius: 12px;
+  /*background: #f2f2f2;*/
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .top-row {
@@ -21,14 +25,60 @@
 }
 
 .box {
-  background-color: #017173;
-  color: white;
   padding: 40px 20px;
   border-radius: 8px;
   font-size: 1.2rem;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(1, 113, 115, 0.6);
   user-select: none;
+  text-align: justify;
+ 
+  
+  
+  position: relative;
+  color: #333;
+}
+
+/* Specific styling for box1, box2 */
+.box1 h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #04946b;
+  margin-bottom: 0.5rem;
+}
+
+.box1 h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111;
+}
+
+
+
+/* Add icons before box3, box4, box5 text */
+.box3::before,
+.box4::before,
+.box5::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 40%;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Example icons - you can replace these SVG images with others if you want */
+.box3::before {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIuMjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9Imx1Y2lkZSBsdWNpZGUtY2lyY2xlLWRvbGxhci1zaWduLWljb24gbHVjaWRlLWNpcmNsZS1kb2xsYXItc2lnbiI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48cGF0aCBkPSJNMTYgOGgtNmEyIDIgMCAxIDAgMCA0aDRhMiAyIDAgMSAxIDAgNEg4Ii8+PHBhdGggZD0iTTEyIDE4VjYiLz48L3N2Zz4=');
+}
+
+.box4::before {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIuMjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9Imx1Y2lkZSBsdWNpZGUtcGhpbGlwcGluZS1wZXNvLWljb24gbHVjaWRlLXBoaWxpcHBpbmUtcGVzbyI+PHBhdGggZD0iTTIwIDExSDQiLz48cGF0aCBkPSJNMjAgN0g0Ii8+PHBhdGggZD0iTTcgMjFWNGExIDEgMCAwIDEgMS0xaDRhMSAxIDAgMCAxIDAgMTJINyIvPjwvc3ZnPg==');
+}
+
+.box5::before {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIuMjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9Imx1Y2lkZSBsdWNpZGUtaGFuZC1jb2lucy1pY29uIGx1Y2lkZS1oYW5kLWNvaW5zIj48cGF0aCBkPSJNMTEgMTVoMmEyIDIgMCAxIDAgMC00aC0zYy0uNiAwLTEuMS4yLTEuNC42TDMgMTciLz48cGF0aCBkPSJtNyAyMSAxLjYtMS40Yy4zLS40LjgtLjYgMS40LS42aDRjMS4xIDAgMi4xLS40IDIuOC0xLjJsNC42LTQuNGEyIDIgMCAwIDAtMi43NS0yLjkxbC00LjIgMy45Ii8+PHBhdGggZD0ibTIgMTYgNiA2Ii8+PGNpcmNsZSBjeD0iMTYiIGN5PSI5IiByPSIyLjkiLz48Y2lyY2xlIGN4PSI2IiBjeT0iNSIgcj0iMyIvPjwvc3ZnPg==');
 }
 
 /* Responsive */

@@ -5,6 +5,7 @@ import Connexion from "./Pages/Connexion";
 import Inscription from "./Pages/Inscription";
 import Content1 from "./components/Content1/Content1";
 import Content2 from "./components/Content/Content2/Content2";
+import Content3 from "./components/Content/Content3/Content3";
 
 
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      
 
       <Routes>
         <Route path="/Connexion" element={<Connexion />} />
@@ -22,8 +24,10 @@ function App() {
           path="/"
           element={
             <>
+            
           <Content1/>
           <Content2/>
+          <Content3/>
              
             </>
           }
