@@ -1,4 +1,4 @@
-import React from 'react';
+
 import "./Content2.css";
 
 const Content2 = () => {
