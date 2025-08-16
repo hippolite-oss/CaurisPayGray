@@ -1,0 +1,143 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  max-width: 100%; /* Correction : 500% n'est pas valide ici */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  background: #f2f2f2;
+  border-radius: 8px;
+  padding: 24px;
+  align-items: center;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: center;
+}
+
+.highlight-text {
+  font-size: 3rem; /* Ajusté pour meilleure lisibilité */
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #014d4d;
+  line-height: 1.1;
+}
+
+.subtext {
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 24px;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.email-form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 420px;
+}
+
+.email-input {
+  flex-grow: 1;
+  padding: 16px 14px;
+  font-size: 1rem;
+  border: 1px solid #5c5a5a;
+  border-radius: 9px;
+  min-width: 220px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.email-input:hover,
+.email-input:focus {
+  border-color: #03f0d5;
+  box-shadow: 0 0 8px rgba(3, 240, 213, 0.5);
+  outline: none;
+}
+
+.btn-get-started {
+  background-color: #017173;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(1, 113, 115, 0.6);
+}
+
+.btn-get-started:hover,
+.btn-get-started:focus {
+  background-color: #01595b;
+  box-shadow: 0 4px 12px rgba(1, 89, 91, 0.8);
+  outline: none;
+}
+
+img {
+  border-radius: 10px;
+  max-width: 100%; /* Correction : enlever 300% trop grand */
+  max-height: 100%;
+  margin-left: 0;
+  
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .right {
+    text-align: center;
+  }
+
+  .email-form {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .email-input {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .btn-get-started {
+    width: 100%;
+    padding: 14px 0;
+    border-radius: 8px;
+  }
+
+  .highlight-text {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .subtext {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
