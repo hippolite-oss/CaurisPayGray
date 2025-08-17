@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./Content1.css";
 import payImage from "../../assets/pay.jpg";
 
