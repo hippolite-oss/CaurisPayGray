@@ -8,7 +8,7 @@ const Content1 = () => {
       <div className="grid">
         <div className="side left">
           <p className="highlight-text">
-            Get paid early. Save automatically all your pay.
+            Get paid early Save automatically all your pay.
           </p>
           <h6 className="subtext">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est harum
