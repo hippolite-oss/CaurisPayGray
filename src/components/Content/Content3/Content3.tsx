@@ -1,22 +1,31 @@
-import React from "react";
 import "./Content3.css";
 
-const Content3: React.FC = () => {
+
+const Content3 = () => {
   return (
     <section className="parent" aria-label="Zone de contenu en grille">
-      <article className="div1" tabIndex={0} aria-describedby="desc1">
-        <h5>WHY USE</h5><br />
-        <h2>Why their prefer CaurisPay</h2>
+      {/* Bloc titre principal */}
+      <article className="div1" tabIndex={0}>
+        <h5>Why Use</h5>
+        <h2>Why They Prefer CaurisPay</h2>
       </article>
-      <article className="div2" tabIndex={0} aria-describedby="desc2">
-        3K+ <br />
-        <h3>Business only already running on CaurPay  </h3>
+
+      {/* Statistique */}
+      <article className="div2" tabIndex={0}>
+        <p className="stat-value">3K+</p>
+        <h3>Businesses already runing on CaurisPay</h3>
       </article>
-      <article className="div3" tabIndex={0} aria-describedby="desc3">
-        Instant withdraw your funds at anny times
+
+      {/* Instant withdraw */}
+      <article className="div3" tabIndex={0}>
+        <p>Instant withdraw your funds at any time</p>
+        <img src="./assets/a1.jpg" alt="Illustration withdrawal" />
       </article>
-      <article className="div4" tabIndex={0} aria-describedby="desc4">
-        No assets violatility
+
+      {/* No volatility */}
+      <article className="div4" tabIndex={0}>
+        <p>No asset volatility</p>
+        <img src="." alt="Illustration stability" />
       </article>
     </section>
   );

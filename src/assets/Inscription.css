@@ -55,7 +55,7 @@
 .container-form input[type="email"]:hover,
 .container-form input[type="password"]:hover,
 .container-form input[type="date"]:hover{
-border-color: #06f78a;
+border-color: rgb(103, 215, 235);
 }
 
 
@@ -76,7 +76,7 @@ border-color: #06f78a;
 .container-form button {
   width: 100%;
   padding: 16px 0;
-  background: #028706;
+  background: rgb(42,139,156);
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
@@ -90,7 +90,7 @@ border-color: #06f78a;
 }
 
 .container-form button:hover {
-  background-color: #017d0a;
+  background-color: rgb(5, 106, 124);
 }
 
 .container-form h4 {

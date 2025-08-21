@@ -15,15 +15,15 @@ const Content2 = () => {
       <div className="bottom-row">
         <div className="box box3">
           <h3>Financial Efficiency</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellendus amet repellat sunt quae, delectus explicabo cumque voluptates eligendi odio libero quia accusamus fa</p>
+          <p>Create a financial experience and automate repeat purchases by scheduling recurring payments</p>
         </div>
         <div className="box box4">
-          <h3>Cost Reduction</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium asperiores, officia ut sit maxime vitae fugit similique nam ullam culpa nesciunt sunt totam quasi maiore</p>
+          <h3>Multiple account</h3>
+          <p>Run your operations with cach from your account and generate yield om funds stored in your account.</p>
         </div>
         <div className="box box5">
-          <h3>Revenue Growth</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, animi adipisci suscipit aliquid esse ratione, dicta voluptatibus ad voluptatem expedita quam nesciunt</p>
+          <h3>Unmatched security</h3>
+          <p>Security manage your finances with organization-wide MFA, card-locking, and account-level controls.</p>
         </div>
       </div>
     </div>
