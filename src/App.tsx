@@ -7,7 +7,7 @@ import Content1 from "./components/Content1/Content1";
 import Content2 from "./components/Content/Content2/Content2";
 import Content3 from "./components/Content/Content3/Content3";
 import Content4 from "./components/Content/Content4/Content4";
-
+import './App.css'
 
 
 function App() {

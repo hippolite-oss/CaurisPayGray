@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 40px;
   padding: 80px;
-  max-width: 1510px;
+  max-width: 1310px;
   margin: 80px auto;
   box-sizing: border-box;
   border-radius: 12px;
@@ -90,8 +90,6 @@
   font-weight: 600;
   margin-bottom: 15px;
   color: #222;
-  text-align: center;
-
 }
 
 .box3 p, .box4 p, .box5 p {
@@ -110,7 +108,7 @@
   height: 50px;
   position: absolute;
   top: 20px;
-  left: 50%;
+  left: 15%;
   transform: translateX(-50%);
   background-repeat: no-repeat;
   background-size: contain;

@@ -19,13 +19,12 @@ const Content3 = () => {
       {/* Instant withdraw */}
       <article className="div3" tabIndex={0}>
         <p>Instant withdraw your funds at any time</p>
-        <img src="./assets/a1.jpg" alt="Illustration withdrawal" />
+       
       </article>
 
       {/* No volatility */}
       <article className="div4" tabIndex={0}>
         <p>No asset volatility</p>
-        <img src="." alt="Illustration stability" />
       </article>
     </section>
   );
