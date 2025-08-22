@@ -1,32 +1,58 @@
 import "./Content3.css";
-
+import a1 from "../../../assets/a1.jpg";
+import a2 from "../../../assets/a2.jpg";
+import a4 from "../../../assets/a4.jpg";
+import a5 from "../../../assets/a5.jpg";
 
 const Content3 = () => {
   return (
-    <section className="parent" aria-label="Zone de contenu en grille">
-      {/* Bloc titre principal */}
-      <article className="div1" tabIndex={0}>
+    <div className="content3-container" aria-label="Zone de contenu en grille">
+      
+      <div className="content3-header" tabIndex={0}>
         <h5>Why Use</h5>
         <h2>Why They Prefer CaurisPay</h2>
-      </article>
+      </div>
 
-      {/* Statistique */}
-      <article className="div2" tabIndex={0}>
-        <p className="stat-value">3K+</p>
-        <h3>Businesses already runing on CaurisPay</h3>
-      </article>
+      <div className="content3-stats" tabIndex={0}>
+        <p className="stats-value">3K+</p>
+        <h3>Businesses already running on CaurisPay</h3>
+      </div>
 
-      {/* Instant withdraw */}
-      <article className="div3" tabIndex={0}>
+      <div className="content3-feature1" tabIndex={0}>
         <p>Instant withdraw your funds at any time</p>
-       
-      </article>
+        <div className="feature1-images">
+          <img
+            src={a1}
+            alt="Illustration de retrait instantané 1"
+            className="feature1-image-large"
+          />
+          <img
+            src={a4}
+            alt="Illustration de retrait instantané 2"
+            className="feature1-image-small"
+          />
+          <img
+            src={a5}
+            alt="Illustration de retrait instantané 3"
+            className="feature1-image-large-rounded"
+          />
+        </div>
+      </div>
 
-      {/* No volatility */}
-      <article className="div4" tabIndex={0}>
-        <p>No asset volatility</p>
-      </article>
-    </section>
+      <div className="content3-feature2" tabIndex={0}>
+        <div className="content-txt1">
+          <p>No asset volatility</p>
+          <h3 className="feature2-text">
+            Generate returns on your cash reserves without making any investments.
+          </h3>
+        </div>
+        <img
+          src={a2}
+          alt="Illustration de stabilité des actifs"
+          className="feature2-image"
+        />
+      </div>
+    </div>
   );
 };
 
