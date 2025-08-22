@@ -1,6 +1,10 @@
 body {
+  margin: 0;
   font-family: "Open Sans", sans-serif;
 }
-.App{
-  background-image: url('src/assets/background.jpg');
+
+.App {
+  min-height: 100vh;
+  background: url("/background.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
