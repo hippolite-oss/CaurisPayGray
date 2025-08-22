@@ -112,6 +112,7 @@
   object-fit: cover;
   border-radius: 16px;
   z-index: 1;
+  box-shadow: 0 6px 15px rgba(1, 89, 91, 0.4);
 }
 
 .overlay-image {
