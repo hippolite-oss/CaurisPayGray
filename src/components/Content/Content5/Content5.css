@@ -1,0 +1,88 @@
+.mission {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.mission h5 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.mission p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 8px 0;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Nouveau style spécifique pour ce paragraphe */
+.mission-highlight {    
+    font-weight: 2rem;
+    font-size: 2.2rem;
+    color: #1a1b1d;
+    line-height: 1.4;
+}
+
+.revenue {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    padding: 30px 20px 0 20px;
+    flex-wrap: wrap; /* Permet aux enfants de passer sur plusieurs lignes */
+}
+
+.runway, .annual, .business {
+    flex: 1 1 280px; /* flex-grow, flex-shrink, flex-basis */
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.runway h1, .annual h1, .business h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #000000; /* Couleur principale pour le chiffre */
+}
+
+.runway p, .annual p, .business p {
+    font-size: 1.4rem;
+    color: rgb(4, 73, 70)
+}
+
+/* Responsive Mobile */
+@media (max-width: 600px) {
+    .revenue {
+        padding: 20px 10px 0 10px;
+        gap: 20px;
+    }
+
+    .runway, .annual, .business {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .mission h5 {
+        font-size: 1.5rem;
+    }
+
+    .mission p {
+        font-size: 0.9rem;
+    }
+
+    .mission-highlight {
+        font-size: 1rem;
+    }
+
+    .runway h1, .annual h1, .business h1 {
+        font-size: 2rem;
+    }
+
+    .runway p, .annual p, .business p {
+        font-size: 1rem;
+    }
+}

@@ -7,6 +7,9 @@ import Content2 from "./components/Content/Content2/Content2";
 import Content3 from "./components/Content/Content3/Content3";
 import Content4 from "./components/Content/Content4/Content4";
 import "./App.css";
+import Content5 from "./components/Content/Content5/Content5";
+import Content6 from "./components/Content/Content6/Content6";
+import Content7 from "./components/Content7/Content7";
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
               <Content2 />
               <Content3 />
               <Content4 />
+              <Content5/>
+              <Content6/>
+              <Content7/>
             </>
           }
         />

@@ -1,0 +1,32 @@
+.section{
+    background: #042338;
+    color: white;
+    padding: 70px;
+}
+
+h5{
+    color: #027d71;
+}
+
+.div{
+    display: flex;
+}
+
+.div-1, .div-2, .div-3{
+    width: 350px;
+    padding: 20px;
+    background-color: #173041;
+    border-radius: 10px;
+}
+
+.div-2, .div-3{
+    margin-left: 20px;
+}
+
+.div h1{
+    font-size: 40px;
+}
+
+.p{
+    font-size: 30px;
+}
