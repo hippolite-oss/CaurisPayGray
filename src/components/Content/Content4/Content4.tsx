@@ -1,4 +1,4 @@
-import './content4.css'
+import './Content4.css'
 
 const Content4 = () => {
   return (
