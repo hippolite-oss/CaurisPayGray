@@ -32,7 +32,7 @@ function Content8() {
 
                      <div className='company'>
                         <h3>Company</h3>
-                        <Link to='#'>About Use</Link>
+                        <Link to='#'>About Us</Link>
                         <Link to='#'>Career</Link>
                         <Link to='#'>Contact</Link>
                     </div>
