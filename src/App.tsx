@@ -10,6 +10,7 @@ import "./App.css";
 import Content5 from "./components/Content/Content5/Content5";
 import Content6 from "./components/Content/Content6/Content6";
 import Content7 from "./components/Content7/Content7";
+import Content8 from "./components/Content8/Content8";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               <Content5/>
               <Content6/>
               <Content7/>
+              <Content8/>
             </>
           }
         />

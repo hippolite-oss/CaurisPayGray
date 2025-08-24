@@ -16,7 +16,7 @@ const Connexion: React.FC<ConnexionProps> = ({ onLogin }) => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://cute-above-bluebird.ngrok-free.app/login', {
+      const response = await fetch('http://192.168.1.92:5001/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
