@@ -110,29 +110,113 @@
     font-size: 0.85rem;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
+    .content8 {
+        padding: 50px 15px 20px;
+    }
+
     .footer-links {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-brand {
+        margin-bottom: 35px;
+    }
+
+    .brand-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .content8 h1 {
+        font-size: 1.7rem;
+    }
+
+    .solutions h3, .company h3, .learn h3, .legal h3, .social h3 {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .solutions a, .company a, .learn a, .legal a {
+        font-size: 0.95rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .social-icons a {
+        width: 38px;
+        height: 38px;
+        font-size: 1.2rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+        margin-top: 10px;
     }
 }
 
+
 @media (max-width: 480px) {
     .content8 {
-        padding: 40px 0 20px;
+        padding: 35px 10px 15px;
+    }
+
+    .footer-brand {
+        margin-bottom: 25px;
+    }
+
+    .brand-logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brand-logo img {
+        margin: 0 0 10px 0;
+        width: 55px;
+        height: 55px;
+    }
+
+    .content8 h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
     }
 
     .footer-links {
         grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .solutions h3, .company h3, .learn h3, .legal h3, .social h3 {
+        font-size: 1.05rem;
+        margin-bottom: 14px;
+    }
+
+    .solutions a, .company a, .learn a, .legal a {
+        font-size: 0.95rem;
+        padding: 4px 0;
+    }
+
+    .social-icons {
+        justify-content: center;
         gap: 20px;
     }
 
-    .footer-brand {
-        margin-bottom: 30px;
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
     }
 
-    .content8 h1 {
-        font-size: 1.6rem;
+    .footer-bottom {
+        font-size: 0.78rem;
+        padding-top: 15px;
     }
 }
+ 
