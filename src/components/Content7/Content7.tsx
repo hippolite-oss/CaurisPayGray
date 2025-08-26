@@ -1,4 +1,5 @@
 import "./Content7.css"
+
 function Content7(){
     return (
         <section className="try">
@@ -15,4 +16,5 @@ function Content7(){
         </section>
     )
 }
+
 export default Content7;
