@@ -1,6 +1,7 @@
 import "./Content2.css";
 import { useEffect, useRef } from "react";
 
+
 const Content2 = () => {
   const boxRefs = [useRef(null), useRef(null), useRef(null)];
 
