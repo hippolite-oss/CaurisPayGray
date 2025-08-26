@@ -166,6 +166,7 @@
   
   .image-container {
     height: 400px;
+    display: none;
   }
   
   .base-image {
