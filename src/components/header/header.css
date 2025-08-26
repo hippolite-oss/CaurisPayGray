@@ -1,16 +1,21 @@
-/* header.css */
-/* Container principal du navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 40px;
-  /*position: sticky;*/
   top: 0;
   z-index: 100;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Logo + Nom */
+.navbar.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+
 .navbar-logo {
   display: flex;
   align-items: center;
@@ -20,7 +25,7 @@
 }
 
 .navbar-logo img {
-  height: 40px; /* Taille du logo */
+  height: 40px;
 }
 
 .navbar-brand {
@@ -29,7 +34,7 @@
   color: #333;
 }
 
-/* Liens de navigation */
+
 .navbar-links {
   display: flex;
   gap: 20px;
@@ -40,7 +45,7 @@
   text-decoration: none;
   color: #000000;
   font-size: 1rem;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
   padding: 8px 12px;
   border-radius: 4px;
 }
@@ -50,27 +55,25 @@
   background-color: #f5f9ff;
 }
 
-/* Conteneur des boutons Login et Signup */
+
 .navbar-buttons {
   display: flex;
   gap: 10px;
 }
 
-/* Style des boutons (Link avec classes btn, login, signup) */
 .btn {
   padding: 8px 16px;
   border-radius: 6px;
   font-size: 0.95rem;
   cursor: pointer;
   border: none;
-  text-decoration: none; /* Pour Link */
+  text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
 }
 
-/* Bouton Login */
 .btn.login {
   background-color: transparent;
   color: #000000;
@@ -78,13 +81,12 @@
 }
 
 .btn.login:hover {
-  color: rgb(42,139,156);
+  color: rgb(42, 139, 156);
   border-color: #017173;
 }
 
-/* Bouton Signup */
 .btn.signup {
-  background-color: rgb(42,139,156);
+  background-color: rgb(42, 139, 156);
   color: white;
 }
 
@@ -92,14 +94,14 @@
   background-color: #035560;
 }
 
-/* Conteneur du contenu (liens + boutons) */
+
 .navbar-content {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-/* Menu Hamburger - caché par défaut sur desktop */
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -121,7 +123,6 @@
   transition: all 0.3s ease;
 }
 
-/* Animation du hamburger lorsqu'il est ouvert */
 .hamburger.open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
@@ -134,18 +135,58 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Responsive */
-@media (max-width: 992px) {
+
+@media (min-width: 769px) and (max-width: 992px) {
   .navbar {
-    padding: 12px 20px;
+    padding: 10px 25px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
   }
-  
-  .navbar-content {
+
+  .navbar-logo {
+    margin-left: 0;
+    gap: 8px;
+  }
+
+  .navbar-logo img {
+    height: 38px;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-links {
+    gap: 15px;
     margin-right: 0;
+  }
+
+  .navbar-links a {
+    font-size: 0.95rem;
+    padding: 6px 10px;
+  }
+
+  .navbar-buttons {
+    gap: 8px;
+  }
+
+  .btn {
+    padding: 7px 14px;
+    font-size: 0.9rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navbar-overlay {
+    display: none;
   }
 }
 
-/* ============ VERSION MOBILE AMÉLIORÉE ============ */
+
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem 1.5rem;
@@ -154,18 +195,18 @@
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
-  
+
   .navbar-logo {
     margin-left: 0;
     z-index: 1001;
   }
-  
+
   .hamburger {
     display: flex;
     position: relative;
     z-index: 1001;
   }
-  
+
   .navbar-content {
     position: fixed;
     top: 0;
@@ -182,18 +223,18 @@
     box-shadow: -5px 0 25px rgba(0, 0, 0, 0.1);
     z-index: 100;
   }
-  
+
   .navbar-content.open {
     right: 0;
   }
-  
+
   .navbar-links {
     flex-direction: column;
     width: 100%;
     gap: 0.5rem;
     margin-right: 0;
   }
-  
+
   .navbar-links a {
     width: 100%;
     padding: 1rem 1.25rem;
@@ -205,27 +246,27 @@
     gap: 0.75rem;
     transition: all 0.3s ease;
   }
-  
+
   .navbar-links a:hover {
-    color: rgb(42,139,156);
+    color: rgb(42, 139, 156);
     background-color: #f5f9ff;
     transform: translateX(5px);
   }
-  
+
   .navbar-buttons {
     flex-direction: column;
     width: 100%;
     gap: 1rem;
   }
-  
+
   .btn {
     width: 100%;
     padding: 1rem;
     font-size: 1rem;
     border-radius: 8px;
   }
+
   
-  /* Overlay pour l'arrière-plan flou */
   .navbar-overlay {
     position: fixed;
     top: 0;
@@ -238,38 +279,38 @@
     transition: all 0.3s ease;
     z-index: 99;
   }
-  
+
   .navbar-overlay.open {
     opacity: 1;
     visibility: visible;
   }
+
   
-  /* Animation d'entrée pour les éléments du menu */
   .navbar-content.open .navbar-links a {
     animation: fadeInRight 0.5s ease forwards;
   }
-  
+
   .navbar-content.open .navbar-links a:nth-child(1) {
     animation-delay: 0.1s;
   }
-  
+
   .navbar-content.open .navbar-links a:nth-child(2) {
     animation-delay: 0.15s;
   }
-  
+
   .navbar-content.open .navbar-links a:nth-child(3) {
     animation-delay: 0.2s;
   }
-  
+
   .navbar-content.open .navbar-links a:nth-child(4) {
     animation-delay: 0.25s;
   }
-  
+
   .navbar-content.open .navbar-buttons {
     animation: fadeInRight 0.5s ease forwards;
     animation-delay: 0.3s;
   }
-  
+
   @keyframes fadeInRight {
     from {
       opacity: 0;
@@ -282,21 +323,20 @@
   }
 }
 
-/* Très petits écrans */
 @media (max-width: 360px) {
   .navbar {
     padding: 0.75rem 1rem;
   }
-  
+
   .navbar-content {
     padding: 70px 1.5rem 1.5rem;
     width: 85%;
   }
-  
+
   .navbar-logo img {
     height: 35px;
   }
-  
+
   .navbar-brand {
     font-size: 1.2rem;
   }
