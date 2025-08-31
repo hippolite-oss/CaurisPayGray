@@ -7,7 +7,7 @@ const Inscription = () => {
   return (
     <div className="container-form">
       <h1>Cauris Pay</h1>
-      <p>Inscrivez-vous des maintenant et profitez de nos servivices.</p>
+      <p>Inscrivez-vous des maintenant et profitez de nos se rvivices.</p>
       
       <form>
         <input type="text" name="nom" placeholder="Nom" required />

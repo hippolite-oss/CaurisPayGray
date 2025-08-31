@@ -6,7 +6,7 @@ interface ConnexionProps {
   onLogin?: (token: string) => void;
 }
 
-
+   
 const Connexion: React.FC<ConnexionProps> = ({ onLogin }) => {
   const navigate = useNavigate(); 
   const [email, setEmail] = useState('');

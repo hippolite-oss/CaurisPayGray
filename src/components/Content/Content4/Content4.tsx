@@ -5,7 +5,7 @@ const Content4 = () => {
     <section className="section">
       <h5>STEP</h5>
       <p className="p">
-        Maximize your returns with a Reserve account that generates 
+        Maximize your returns with a <br /> Reserve account that generates 
       </p>
       <div className="div">
         <div className="div-item">
