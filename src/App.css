@@ -5,6 +5,6 @@ body {
 
 .App {
   min-height: 100vh;
-  background: url("/background.jpg") no-repeat center center fixed;
+  background-color: #e2e6eb;
   background-size: cover;
 }
