@@ -1,12 +1,12 @@
 .section {
-      background: #042338;
+      background: #8490a7;
       color: white;
       padding: 70px 5%;
     }
 
     h5 {
     
-  color: #027d71;
+  color: white;
   font-size: 1.2rem;
   margin-bottom: 1rem;
   max-width: 1200px;     
@@ -28,7 +28,7 @@
       flex: 1;
       min-width: 300px;
       padding: 30px;
-      background-color: #173041;
+      background-color: #8e98ae;
       border-radius: 10px;
       margin-bottom: 20px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -42,7 +42,7 @@
     .div h1 {
       font-size: 48px;
       margin: 0 0 15px 0;
-      color: #027d71;
+      color: white;
     }
 
     .div-item h2 {
