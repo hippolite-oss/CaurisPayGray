@@ -81,17 +81,17 @@
 }
 
 .btn.login:hover {
-  color: rgb(42, 139, 156);
-  border-color: #017173;
+  color: #8593aa;
+  border-color: #8593aa;
 }
 
 .btn.signup {
-  background-color: rgb(42, 139, 156);
+  background-color: #8593aa;
   color: white;
 }
 
 .btn.signup:hover {
-  background-color: #035560;
+  background-color: #6b7688;
 }
 
 
