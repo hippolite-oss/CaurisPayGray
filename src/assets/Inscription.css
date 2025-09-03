@@ -76,7 +76,7 @@ border-color: rgb(103, 215, 235);
 .container-form button {
   width: 100%;
   padding: 16px 0;
-  background: rgb(42,139,156);
+  background: rgb(133,147,170);
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
@@ -90,7 +90,7 @@ border-color: rgb(103, 215, 235);
 }
 
 .container-form button:hover {
-  background-color: rgb(5, 106, 124);
+  background-color: rgb(110, 121, 138);
 }
 
 .container-form h4 {
