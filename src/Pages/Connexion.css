@@ -76,7 +76,7 @@
 
 /* Boutons */
 .submit-btn {
-  background-color: rgb(42,139,156);
+  background-color: rgb(133,147,170);
   color: white;
   border: none;
   padding: 12px;
@@ -88,7 +88,7 @@
 }
 
 .submit-btn:hover {
-  background-color: rgb(5, 106, 124);
+  background-color: rgb(110, 121, 138);
 }
 
 /* Séparateur */
