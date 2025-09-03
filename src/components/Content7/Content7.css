@@ -36,7 +36,8 @@
 }
 
 .more:hover{
-    background-color: rgb(131, 144, 158)
+    background-color: rgb(131, 144, 158);
+    border:solid 1px white; 
 }
 
 .get{
