@@ -1,5 +1,5 @@
 .try{
-    background: #042338;
+    background: rgb(142,152,174);
     color: white;
     display: flex;
     margin: 70px;
@@ -22,14 +22,21 @@
 
 .started{
     margin-right: 20px;
-    background: #08b1a5;
-    border: none;
+    background: rgb(151, 168, 186);
+    border: solid 1px white;
+}
+.started:hover{
+    background-color: rgb(131, 144, 158);
 }
 
 .more{
     margin-right: 20px;
     background: none;
-    border:solid 1px white;
+    border:solid 1px rgb(104, 101, 101);
+}
+
+.more:hover{
+    background-color: rgb(131, 144, 158)
 }
 
 .get{
