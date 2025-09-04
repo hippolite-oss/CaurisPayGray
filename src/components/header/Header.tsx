@@ -20,71 +20,73 @@ const Header: React.FC = () => {
   return (
     <>
       <header className={`navbar ${isScrolled ? "scrolled" : ""}`}>
-        {/* Logo */}
-        <div className="navbar-logo">
-          <img src={logo} alt="Logo CaurisPay" />
-          <span className="navbar-brand">CaurisPay</span>
-        </div>
-
-        {/* Hamburger */}
-        <button
-          className={`hamburger ${isMenuOpen ? "open" : ""}`}
-          onClick={toggleMenu}
-          aria-label="Menu"
-          aria-expanded={isMenuOpen}
-        >
-          <span></span><span></span><span></span>
-        </button>
-
-        {/* Menu */}
-        <div className={`navbar-content ${isMenuOpen ? "open" : ""}`}>
-          <nav className="navbar-links">
-            <ScrollLink
-              to="products"
-              smooth={true}
-              duration={600}
-              offset={-70}
-              onClick={closeMenu}
-            >
-              Products
-            </ScrollLink>
-            <ScrollLink
-              to="customers"
-              smooth={true}
-              duration={600}
-              offset={-70}
-              onClick={closeMenu}
-            >
-              Customers
-            </ScrollLink>
-            <ScrollLink
-              to="pricing"
-              smooth={true}
-              duration={600}
-              offset={-70}
-              onClick={closeMenu}
-            >
-              Pricing
-            </ScrollLink>
-            <ScrollLink
-              to="learn"
-              smooth={true}
-              duration={600}
-              offset={-70}
-              onClick={closeMenu}
-            >
-              Learn
-            </ScrollLink>
-          </nav>
-
-          <div className="navbar-buttons">
-            <Link to="/connexion" className="btn login" onClick={closeMenu}>
-              Login
-            </Link>
-            <Link to="/inscription" className="btn signup" onClick={closeMenu}>
-              Sign Up
-            </Link>
+        <div className="navbar-container">
+          {/* Logo */}
+          <div className="navbar-logo">
+            <img src={logo} alt="Logo CaurisPay" />
+            <span className="navbar-brand">CaurisPay</span>
           </div>
+
+          {/* Menu */}
+          <div className={`navbar-content ${isMenuOpen ? "open" : ""}`}>
+            <nav className="navbar-links">
+              <ScrollLink
+                to="products"
+                smooth={true}
+                duration={600}
+                offset={-70}
+                onClick={closeMenu}
+              >
+                Products
+              </ScrollLink>
+              <ScrollLink
+                to="customers"
+                smooth={true}
+                duration={600}
+                offset={-70}
+                onClick={closeMenu}
+              >
+                Customers
+              </ScrollLink>
+              <ScrollLink
+                to="pricing"
+                smooth={true}
+                duration={600}
+                offset={-70}
+                onClick={closeMenu}
+              >
+                Pricing
+              </ScrollLink>
+              <ScrollLink
+                to="learn"
+                smooth={true}
+                duration={600}
+                offset={-70}
+                onClick={closeMenu}
+              >
+                Learn
+              </ScrollLink>
+            </nav>
+
+            <div className="navbar-buttons">
+              <Link to="/connexion" className="btn login" onClick={closeMenu}>
+                Login
+              </Link>
+              <Link to="/inscription" className="btn signup" onClick={closeMenu}>
+                Sign Up
+              </Link>
+            </div>
+          </div>
+
+          {/* Hamburger */}
+          <button
+            className={`hamburger ${isMenuOpen ? "open" : ""}`}
+            onClick={toggleMenu}
+            aria-label="Menu"
+            aria-expanded={isMenuOpen}
+          >
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </header>
 
