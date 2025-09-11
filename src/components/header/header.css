@@ -154,7 +154,15 @@ body.dark-mode .content2-container {
   filter: invert(93%) hue-rotate(180deg) brightness(90%) contrast(85%);
   transition: filter 0.3s ease;
 }
+body.dark-mode .content3-container {
+  filter: invert(93%) hue-rotate(180deg) brightness(90%) contrast(85%);
+  transition: filter 0.3s ease;
+}
 
+body.dark-mode .section {
+  filter: invert(93%) hue-rotate(180deg) brightness(90%) contrast(85%);
+  transition: filter 0.3s ease;
+}
 
 /* Media Queries */
 
