@@ -27,7 +27,14 @@ body.dark-mode .section {
       color: white;
       padding: 70px 5%;
 }
-
+body.dark-mode .try{
+  background: #a1a2be;
+    color: white;
+    display: flex;
+    margin: 70px;
+    padding: 50px;
+    border-radius: 30px;
+}
 
 
 
