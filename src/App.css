@@ -35,8 +35,12 @@ body.dark-mode .try{
     padding: 50px;
     border-radius: 30px;
 }
-
-
+body.dark-mode .started{
+    margin-right: 20px;
+    background: white;
+    border: solid 1px black ;
+    color: black;
+}
 
 
 body.dark-mode .btn.login {
