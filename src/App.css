@@ -18,6 +18,17 @@ body.dark-mode .connexion-container{
   filter: invert(93%) hue-rotate(180deg) brightness(90%) contrast(85%);
   transition: filter 0.3s ease;
 }
+body.dark-mode .container-form {
+  filter: invert(93%) hue-rotate(180deg) brightness(90%) contrast(85%);
+  transition: filter 0.3s ease;
+}
+body.dark-mode .section {
+  background: #a1a2be;
+      color: white;
+      padding: 70px 5%;
+}
+
+
 
 
 
